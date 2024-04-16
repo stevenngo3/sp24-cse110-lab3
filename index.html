@@ -7,33 +7,102 @@
         <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
     </head>
     <body>
-        <h1><center>Pomodoro Timer First Brainstorm</center></h1>
-        <h2><center>Brainstorming</center></h2>
-        <h3><center>April 10, 2024</center></h3>
-        <p><b>Attendance list:</b></p>
-        <ul>
-            <li>Joe</li>
-            <li>Bob</li>
-            <li>John</li>
-            <li>Jane</li>
-        </ul>
-        <p><b>Meeting agenda</b></p>
-        <p>This is the meeting agenda description.</p>
-        <p><b>Unfinished business from last meeting</b></p>
-        <p>This is the unfinished business description from last meeting.</p>
-        <p><b>New business</b></p>
-        <p>This is the description for the new business.</p>
-        <p><b>Miscellaneous comments/questions/concerns</b></p>
-        <p>This is the description for the miscellaneous comments/questions/concerns.</p>
-        <p><b>Pictures presented</b></p>
-        <img src="monkey.webp" alt="Picture of a monkey">
-        <p><b>Audio recording</b></p>
-        <audio controls> 
-            <source src="monkeysounds.mp3" type="audio/mp3">
-        </audio>
-        <p><b>Video recording</b></p>
-        <video width="400" controls>
-            <source src="monkeyvideo.mp4" type="video/mp4">
-        </video>
+        <header>
+            <h1><center>Pomodoro Timer First Brainstorm</center></h1>
+            <h2><center>Brainstorming</center></h2>
+            <h3><center>April 10, 2024</center></h3>
+        </header>
+        <main>
+            <section>
+            <p><b>Attendance list:</b></p>
+            <ul>
+                <li>Joe</li>
+                <li>Bob</li>
+                <li>John</li>
+                <li>Jane</li>
+            </ul>
+            <p><b>Meeting agenda</b></p>
+            <p>This is the meeting agenda description.</p>
+        <nav>
+            <ul>
+                <li><a href="#pictures presented">Picture presented</a></li>
+                <li><a href="#audio recording">Audio recording</a></li>
+                <li><a href="#video recording">Video recording</a></li>
+            </ul>
+        </nav>
+            <p><b>Unfinished business from last meeting</b></p>
+            <p>This is the unfinished business description from last meeting.</p>
+            <p><b>New business</b></p>
+            <p>This is the description for the new business.</p>
+            <details>
+                <summary>Future project</summary>
+                <p>We will be building a school for the monkeys.</p>
+            </details>
+            <p><b>Miscellaneous comments/questions/concerns</b></p>
+            <div>
+            <ol>
+                <li>Is this a serious question?</li>
+                <li>The <i>Chicken 9000</i>, John's robot chicken, will not be available until next week</li>
+                <li>Joe has a <span>brown</span> cat</li>
+                <li>Bob hates his pet <strong>monkey</strong></li>
+                <li>Jane <em>does not</em> know how to swim</li>
+            </ol>
+            </div>
+            <br>
+            <hr>
+            <p id="pictures presented"><b>Pictures presented</b></p>
+            <img src="monkey.webp" alt="Picture of a monkey">
+            <p id="audio recording"><b>Audio recording</b></p>
+            <audio controls> 
+                <source src="monkeysounds.mp3" type="audio/mp3">
+            </audio>
+            <p id="video recording"><b>Video recording</b></p>
+            <video width="400" controls>
+                <source src="monkeyvideo.mp4" type="video/mp4">
+            </video>
+            </section> 
+        </main>
+        <br>
+        <footer>
+            <section>
+            <form>
+                <fieldset>
+                    <legend>Apply for a pet monkey</legend>
+                    <label for="fname">Enter your first and last name:</label><br>
+                    <input type="text"id="flname">
+                    <br>
+                    <br>
+                    <label for="reason">Why do you want a pet monkey?</label><br>
+                    <textarea>I want a pet monkey because...</textarea> 
+                    <br>
+                    <br>
+                    <label for="desired-age">Choose desired age for monkey</label>
+                    <input list="age-choice" id="desired-age" name="desired-age"/>
+                    <datalist id="age-choice">
+                        <option value="0-5"></option>
+                        <option value="6-10"></option>
+                        <option value="11-15"></option>
+                        <option value="16-20"></option>
+                        <option value="21+"></option>
+                        <option value="Any age"></option>
+                    </datalist>
+                    <br>
+                    <br>
+                    <label for"color-choice">Choose a color for the monkey</label>
+                    <select name="color-choice" id="color-choice">
+                        <option value="Color">Color</option>
+                        <option value="Red">Red</option>
+                        <option value="Orange">Orange</option>
+                        <option value="Brown">Brown</option>
+                        <option value="Black">Black</option>
+                        <option value="Blue">Blue</option>
+                    </select>
+                    <br>
+                    <br>
+                    <button type="button">Submit</button>
+                </fieldset>
+            </form> 
+            </section>
+        </footer>
     </body>
 </html>
