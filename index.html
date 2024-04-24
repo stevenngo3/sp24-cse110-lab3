@@ -3,8 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <title>Pomodoro Timer First Brainstorm</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
         <link rel="icon" href="favicon.ico">
+        <style>
+        #future-project {
+            color: lightskyblue;
+        }
+        </style>
     </head>
     <body>
         <header>
@@ -15,32 +24,33 @@
         <main>
             <section>
             <h4>Attendance list:</h4>
-            <ul>
+            <ul id="attendance-names">
                 <li>Joe</li>
                 <li>Bob</li>
                 <li>John</li>
+                <li id="jack-name">Jack</li>
                 <li>Jane</li>
             </ul>
-            <p><b>Meeting agenda</b></p>
+            <p id="agenda"><b>Meeting agenda</b></p>
             <p>This is the meeting agenda description.</p>
         <nav>
-            <ul>
+            <ul id="presented">
                 <li><a href="#pictures-presented">Picture presented</a></li>
                 <li><a href="#audio-recording">Audio recording</a></li>
                 <li><a href="#video-recording">Video recording</a></li>
             </ul>
         </nav>
-            <p><b>Unfinished business from last meeting</b></p>
+            <p id="unfinished-business"><b>Unfinished business from last meeting</b></p>
             <p>This is the unfinished business description from last meeting.</p>
-            <p><b>New business</b></p>
+            <p id="new-business"><b>New business</b></p>
             <p>This is the description for the new business.</p>
             <details>
-                <summary>Future project</summary>
-                <p>We will be building a school for the monkeys.</p>
+                <summary id="future-project">Future project</summary>
+                <p id='project-notes'>We will be building a school for the monkeys.</p>
             </details>
-            <p><b>Miscellaneous comments/questions/concerns</b></p>
+            <p id="misc-comments"><b>Miscellaneous comments/questions/concerns</b></p>
             <div>
-            <ol>
+            <ol id="misc-list">
                 <li>Is this a serious question?</li>
                 <li>The <i>Chicken 9000</i>, John's robot chicken, will not be available until next week</li>
                 <li>Joe has a <span>brown</span> cat</li>
@@ -66,7 +76,7 @@
         <footer>            
             <form>
                 <fieldset>
-                    <legend>Apply for a pet monkey</legend>
+                    <legend style="color:cyan;">Apply for a pet monkey</legend>
                     <label for="flname">Enter your first and last name:</label><br>
                     <input type="text" id="flname">
                     <br>
