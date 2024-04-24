@@ -144,7 +144,7 @@ button:active {
 }
 
 @media screen and (max-width: 1000px) {
-    #attendance-names {
+    .attendance-names {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
         row-gap: 15px;
